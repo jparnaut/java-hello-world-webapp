@@ -1,0 +1,10 @@
+kind: pipeline
+name: ci-pipeline
+
+steps:
+  - name: code-analysis
+    image: aosapps/drone-sonar-plugin
+    settings:
+      sonar_host: http://35.188.205.135:9000/
+      sonar_token: ddcfe0e09800d294563d0f53f23c7beb2fbe438f
+      source: .
